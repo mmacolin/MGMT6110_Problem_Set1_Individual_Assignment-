@@ -1,0 +1,135 @@
+# PROMPTS.md - RouteRelay Internal Logistics Dispatch Board
+**Student:** [Moeung Macolin] · **Course:** MGMT 6110 · **Problem Set 1**
+**User sentence:** A [user] opens this screen to [job], and knows it worked when [what they see].
+**Live link:** mgmt-6110-problem-set1-individual-a.vercel.app
+
+---
+
+## Prompt 1 - the master prompt 
+```
+ROLE: You are a senior front-end developer building a React web app.
+GOAL:
+Build the front end of RouteRelay, a logistics dispatch tool for internal dispatchers.
+Their one job is:
+“Move a late shipment to another driver and see the new arrival time.”
+SCREENS:
+Dispatch Board
+Show at least 10 invented shipments with:
+Shipment ID
+Destination
+Driver
+ETA
+Delay
+Status
+Status:
+Green = On time
+Red = Late
+Amber = Reassigned
+Late shipments should appear clearly in red.
+Each late shipment has a “Reassign” button.
+Reassign Shipment
+When the user clicks Reassign, show:
+Selected shipment
+Current driver
+Current ETA
+Delay
+Show 4–6 invented available drivers with:
+Driver name
+Vehicle number
+Workload
+New estimated arrival time
+Let the dispatcher select one driver and press:
+“Confirm Reassignment”
+Updated Dispatch Board
+Return to the Dispatch Board without reloading the page.
+Update the selected shipment with:
+New driver
+New ETA
+Status: Reassigned
+Change the row from RED to AMBER.
+The user knows it worked when:
+“the row turns from red to amber.”
+DATA:
+Keep ALL invented data in ONE separate file.
+Example:
+src/data/logisticsData.js
+Use only fictional:
+shipment IDs
+driver names
+destinations
+vehicle numbers
+times
+numbers
+Include at least 10 shipment rows.
+DESIGN:
+Make it simple, clean, and mobile-friendly.
+Use:
+White/light grey background
+Dark text
+Red for late
+Amber for reassigned
+Green for on time
+Large, readable buttons and text
+Desktop can use a table.
+Mobile should use simple cards.
+SCOPE:
+Front end only.
+Do NOT:
+call Gemini
+call any AI model
+call any outside service
+fetch from any URL
+use a database
+create login
+create accounts
+use real company names or logos
+add extra features
+Use React state so screens change without reloading the page.
+When finished, list the files created and what each file contains.
+If you make a choice I did not specify, explain it in ONE short line.
+
+---
+
+## Prompt 2 - fix the empty state
+```
+When the shipment list has no rows, show "No shipments due today" instead of an empty table.
+Change nothing else.
+
+---
+
+## Prompt 3 - move the late shipments to the top
+```
+
+Show all shipments with status "Late" at the top of the Dispatch Board.
+
+Keep the other shipments below them.
+
+Change nothing else.
+
+## Prompt 4 - open the reassignment screen
+
+When the user clicks "Reassign" on a late shipment, open the Reassign Shipment screen and show the selected shipment's details.
+
+Change nothing else.
+
+## Prompt 5 - Select a replacement driver
+
+On the Reassign Shipment screen, let the user select one available driver.
+
+Clearly highlight the selected driver.
+
+Change nothing else.
+
+## Prompt 6 - Confirm the reassignment
+
+When the user clicks "Confirm Reassignment":
+
+- return to the Dispatch Board
+- update the shipment with the selected new driver
+- update the ETA
+- change the status from "Late" to "Reassigned"
+- change the shipment row from red to amber
+- show a small message saying "Shipment reassigned successfully."
+
+Change nothing else.
+
