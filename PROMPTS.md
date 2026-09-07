@@ -1,6 +1,6 @@
 # PROMPTS.md - RouteRelay Internal Logistics Dispatch Board
 **Student:** [Moeung Macolin] · **Course:** MGMT 6110 · **Problem Set 1**
-**User sentence:** A [user] opens this screen to [job], and knows it worked when [what they see].
+**User sentence:** A logistics dispatcher opens this screen to reassign a late shipment to another driver, and knows it worked when the shipment returns to the Dispatch Board with the new driver and ETA, and the row changes from red to amber.
 **Live link:** mgmt-6110-problem-set1-individual-a.vercel.app
 
 ---
