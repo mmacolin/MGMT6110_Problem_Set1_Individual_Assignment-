@@ -95,6 +95,10 @@ If you make a choice I did not specify, explain it in ONE short line.
 When the shipment list has no rows, show "No shipments due today" instead of an empty table.
 Change nothing else.
 
+**What came back:** The main logistics interface worked, but I noticed that when there were no shipments, the screen showed an empty table instead of explaining that nothing was due.
+
+**What I changed next and why:** I added Prompt 2 to show “No shipments due today” because an empty table could confuse the dispatcher.
+
 ---
 
 ## Prompt 3 - move the late shipments to the top
