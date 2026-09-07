@@ -1,4 +1,7 @@
 # REFLECTION
+# PROMPTS.md - RouteRelay Internal Logistics Dispatch Board
+**Student:** [Moeung Macolin] · **Course:** MGMT 6110 · **Problem Set 1**
+**User sentence:** A logistics dispatcher opens this screen to reassign a late shipment to another driver, and knows it worked when the shipment returns to the Dispatch Board with the new driver and ETA, and the row changes from red to amber.
 
 ## Q1 — Who are your users, and what changes for them?
 
